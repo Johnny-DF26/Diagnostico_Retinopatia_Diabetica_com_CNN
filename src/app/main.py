@@ -1,11 +1,9 @@
 import streamlit as st
-from keras.models import model_from_json
 import numpy as np
-from PIL import Image
 import cv2
 import matplotlib.pyplot as plt
 import keras
-import os
+from keras.models import model_from_json
 
 # Obtém o caminho absoluto para o arquivo JSON
 file_path_json = 'Classificao_Diabetes_CNN/src/models/model_093/classificador_093.json'
