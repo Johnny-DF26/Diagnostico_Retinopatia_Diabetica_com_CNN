@@ -11,6 +11,8 @@ Este conjunto de dados consiste em uma grande coleção de imagens retinais de a
 <font color='red'> **Retinopatia Diabética ---> 0**\
 <font color='lightgreen'> **Sem Retinopatia Diabética ---> 1**
 
+Base de dados:
+links: https://www.kaggle.com/datasets/pkdarabi/diagnosis-of-diabetic-retinopathy
 
 Organização do Projeto:
 ------------
