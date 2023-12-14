@@ -1,9 +1,18 @@
-project_name
+Diagnóstico de Retinopatia Diabética com CNN
 ==============================
 
-A short description of the project.
+**Sobre o conjunto de dados:**\
+A prevalência da Retinopatia Diabética é alarmantemente elevada, afetando uma proporção significativa de indivíduos com diabetes de longa data. A detecção precoce e o tratamento oportuno são cruciais para prevenir a perda de visão e melhorar os resultados dos pacientes. No entanto, a interpretação manual de imagens da retina para o rastreio da Retinopatia Diabética pode ser demorada e sujeita a erros humanos. Portanto, há uma necessidade premente de uma ferramenta automatizada e precisa que possa auxiliar os profissionais de saúde na classificação da gravidade da Retinopatia Diabética.
+Os métodos existentes para detectar e classificar a Retinopatia Diabética baseiam-se frequentemente em avaliações subjectivas e extenso trabalho manual, levando a ineficiências e potenciais inconsistências no diagnóstico. Além disso, a crescente prevalência da diabetes e a disponibilidade limitada de oftalmologistas agravam ainda mais os desafios no rastreio e diagnóstico atempados. Portanto, há necessidade de desenvolver um sistema automatizado robusto e confiável que possa detectar e classificar com precisão a Retinopatia Diabética, permitindo intervenção precoce e planos de tratamento personalizados.
 
-Project Organization
+**Descrição de dados :**\
+Este conjunto de dados consiste em uma grande coleção de imagens retinais de alta resolução capturadas sob várias condições de imagem. Um profissional médico avaliou a presença de Retinopatia Diabética em cada imagem e atribuiu uma classificação numa escala que varia entre 0 e 1, que corresponde às seguintes categorias:
+
+<font color='red'> **Retinopatia Diabética ---> 0**\
+<font color='lightgreen'> **Sem Retinopatia Diabética ---> 1**
+
+
+Organização do Projeto:
 ------------
 
     ├── LICENSE
