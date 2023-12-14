@@ -2,7 +2,7 @@ numpy==1.26.2
 pandas
 scikit-learn
 tensorflow
-keras
 matplotlib
 seaborn
 streamlit
+keras
