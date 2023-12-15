@@ -29,6 +29,7 @@ img_input = st.file_uploader("Escolha uma imagem", type=['jpg', 'jpeg'], accept_
 if img_input is not None:
 
     img = Image.open(img_input)
+    st.write("Imagem Enviada:")
     st.image(img, caption='Imagem carregada', use_column_width=True)
 
     # Pré-processamento da imagem para fazer a previsão
@@ -38,8 +39,7 @@ if img_input is not None:
     img = img / 255
     img = img.reshape((1, img.shape[0], img.shape[1], img.shape[2]))
 
-    st.write("Imagem Enviada:")
-    st.image(img, caption='Imagem enviada', use_column_width=False, width=200)
+    # st.image(img, caption='Imagem enviada', use_column_width=False, width=200)
 
     # Realizar a previsão
     # st.write("Fazendo previsão...")
@@ -49,7 +49,7 @@ if img_input is not None:
 
     # Exibir a imagem editada com o diagnóstico sobreposto
     st.write("Imagem com Diagnóstico:")
-    
+
     # Lógica para interpretar a previsão e exibir o diagnóstico
     if prediction == 0:  
         st.image(img_cp, caption='Diagnóstico sobreposto', use_column_width=False, width=500)
