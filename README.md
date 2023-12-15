@@ -14,6 +14,10 @@ Este conjunto de dados consiste em uma grande coleção de imagens retinais de a
 Base de dados:
 links: https://www.kaggle.com/datasets/pkdarabi/diagnosis-of-diabetic-retinopathy
 
+Projeto no Streamlit:
+link: https://diagnosticoretinopatiadiabeticacomcnn.streamlit.app/
+
+
 Organização do Projeto:
 ------------
 
