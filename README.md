@@ -11,10 +11,10 @@ Este conjunto de dados consiste em uma grande coleção de imagens retinais de a
 <font color='red'> **Retinopatia Diabética ---> 0**\
 <font color='lightgreen'> **Sem Retinopatia Diabética ---> 1**
 
-Base de dados:
+Base de dados:\
 links: https://www.kaggle.com/datasets/pkdarabi/diagnosis-of-diabetic-retinopathy
 
-Projeto no Streamlit:
+Projeto no Streamlit:\
 link: https://diagnosticoretinopatiadiabeticacomcnn.streamlit.app/
 
 OBS: Imagens para teste consta na pasta:\
