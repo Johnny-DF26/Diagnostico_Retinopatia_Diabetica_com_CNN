@@ -2,12 +2,12 @@ import streamlit as st
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
-import keras
 from keras.models import model_from_json
+import os
 
 # Obtém o caminho absoluto para o arquivo JSON
-file_path_json = 'Classificao_Diabetes_CNN/src/models/model_093/classificador_093.json'
-file_path_weigths = 'Classificao_Diabetes_CNN/src/models/model_093/weigths_classificador_0.93.h5'
+file_path_json = 'src/models/model_093/classificador_093.json'
+file_path_weigths = 'src/models/model_093/weigths_classificador_0.93.h5'
 
 def load_model(path1, path2):
     with open(path1, 'r') as f:
@@ -50,12 +50,12 @@ if uploaded_file is not None:
     # Lógica para interpretar a previsão e exibir o diagnóstico
     if prediction == 0:  
         cv2.putText(img_cp, 'DR: Positive', (140,220), cv2.FONT_HERSHEY_SIMPLEX, 0.4, (0,255,0), 1)
-        st.image(img_cp, caption='Diagnóstico sobreposto', use_column_width=True, width=400)
+        st.image(img_cp, caption='Diagnóstico sobreposto', use_column_width=False, width=500)
         st.write("Diagnóstico:")
         st.markdown(f'Paciente com<span style="color: red;"> Retinopatia Diabética</span> com {(prediction_pct[0][prediction]):.2%}.', unsafe_allow_html=True)
     else:
         cv2.putText(img_cp, 'DR: Negative', (140,220), cv2.FONT_HERSHEY_SIMPLEX, 0.4, (0,255,0), 1)
-        st.image(img_cp, caption='Diagnóstico sobreposto', use_column_width=True, width=400)
+        st.image(img_cp, caption='Diagnóstico sobreposto', use_column_width=False, width=500)
         st.write("Diagnóstico:")
         st.markdown(f'Paciente<span style="color: blue;"> Normal</span> com {(prediction_pct[0][prediction]):.2%}.', unsafe_allow_html=True)
 
