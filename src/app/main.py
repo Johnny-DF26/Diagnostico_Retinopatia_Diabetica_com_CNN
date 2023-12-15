@@ -60,7 +60,7 @@ if img_input is not None:
     # Tamanho do texto
     text_width, text_height = draw.textsize(text, font=font)
     # Coordenadas para o canto inferior direito
-    image_width, image_height = img.size
+    image_width, image_height = img_cp.size
     margin = 10
     text_position = (image_width - text_width - margin, image_height - text_height - margin)
     # Escrever o texto na imagem
