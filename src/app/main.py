@@ -51,7 +51,7 @@ if img_input is not None:
     st.write("Imagem com Diagnóstico:")
 
 
-  
+    # Colocar um texto na imagem
     draw = ImageDraw.Draw(img_cp)
     # Escolher a fonte e o tamanho
     font = ImageFont.load_default()  # Substitua pela fonte desejada e pelo tamanho
@@ -61,10 +61,9 @@ if img_input is not None:
     text_width, text_height = draw.textsize(text, font=font)
     # Coordenadas para o canto inferior direito
     image_width, image_height = img_cp.size
-    margin = 10
+    margin = 5
     text_position = (image_width - text_width - margin, image_height - text_height - margin)
     # Escrever o texto na imagem
-
 
 
     # Lógica para interpretar a previsão e exibir o diagnóstico
