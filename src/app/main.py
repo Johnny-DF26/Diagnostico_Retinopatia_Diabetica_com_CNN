@@ -64,12 +64,12 @@ if img_input is not None:
     margin = 10
     text_position = (image_width - text_width - margin, image_height - text_height - margin)
     # Escrever o texto na imagem
-    draw.text(text_position, text, fill="white", font=font)
 
 
 
     # Lógica para interpretar a previsão e exibir o diagnóstico
     if prediction == 0:
+        draw.text(text_position, text, fill="white", font=font)
         st.image(img_cp, caption='Diagnóstico sobreposto', use_column_width=False, width=500)
         st.write("Diagnóstico:")
         st.markdown(f'Paciente com<span style="color: red;"> Retinopatia Diabética</span> com {(prediction_pct[0][prediction]):.2%}.', unsafe_allow_html=True)
