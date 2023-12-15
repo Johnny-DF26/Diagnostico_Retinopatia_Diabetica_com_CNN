@@ -50,8 +50,26 @@ if img_input is not None:
     # Exibir a imagem editada com o diagnóstico sobreposto
     st.write("Imagem com Diagnóstico:")
 
+
+  
+    draw = Image.ImageDraw.Draw(img_cp)
+    # Escolher a fonte e o tamanho
+    font = Image.ImageFont.truetype("arial.ttf", 36)  # Substitua pela fonte desejada e pelo tamanho
+    # Texto a ser escrito
+    text = "DR: Positive"
+    # Tamanho do texto
+    text_width, text_height = draw.textsize(text, font=font)
+    # Coordenadas para o canto inferior direito
+    image_width, image_height = img.size
+    margin = 10
+    text_position = (image_width - text_width - margin, image_height - text_height - margin)
+    # Escrever o texto na imagem
+    draw.text(text_position, text, fill="white", font=font)
+
+
+
     # Lógica para interpretar a previsão e exibir o diagnóstico
-    if prediction == 0:  
+    if prediction == 0:
         st.image(img_cp, caption='Diagnóstico sobreposto', use_column_width=False, width=500)
         st.write("Diagnóstico:")
         st.markdown(f'Paciente com<span style="color: red;"> Retinopatia Diabética</span> com {(prediction_pct[0][prediction]):.2%}.', unsafe_allow_html=True)
