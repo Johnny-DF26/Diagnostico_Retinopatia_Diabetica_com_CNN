@@ -74,6 +74,7 @@ if img_input is not None:
         st.write("Diagnóstico:")
         st.markdown(f'Paciente com<span style="color: red;"> Retinopatia Diabética</span> com {(prediction_pct[0][prediction]):.2%}.', unsafe_allow_html=True)
     else:
+        draw.text(text_position, text, fill="white", font=font)
         st.image(img_cp, caption='Diagnóstico sobreposto', use_column_width=False, width=500)
         st.write("Diagnóstico:")
         st.markdown(f'Paciente<span style="color: blue;"> Normal</span> com {(prediction_pct[0][prediction]):.2%}.', unsafe_allow_html=True)
