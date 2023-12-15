@@ -54,7 +54,7 @@ if img_input is not None:
   
     draw = ImageDraw.Draw(img_cp)
     # Escolher a fonte e o tamanho
-    font = ImageFont.truetype("arial.ttf", 36)  # Substitua pela fonte desejada e pelo tamanho
+    font = ImageFont.load_default()  # Substitua pela fonte desejada e pelo tamanho
     # Texto a ser escrito
     text = "DR: Positive"
     # Tamanho do texto
