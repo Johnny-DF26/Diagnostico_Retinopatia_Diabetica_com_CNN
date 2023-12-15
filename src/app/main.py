@@ -4,7 +4,7 @@ import cv2
 import matplotlib.pyplot as plt
 from keras.models import model_from_json
 import tensorflow as tf
-from PIL import Image
+from PIL import Image, ImageDraw, ImageFont
 from keras.preprocessing import image
 
 # Obtém o caminho absoluto para o arquivo JSON
@@ -52,9 +52,9 @@ if img_input is not None:
 
 
   
-    draw = Image.ImageDraw.Draw(img_cp)
+    draw = ImageDraw.Draw(img_cp)
     # Escolher a fonte e o tamanho
-    font = Image.ImageFont.truetype("arial.ttf", 36)  # Substitua pela fonte desejada e pelo tamanho
+    font = ImageFont.truetype("arial.ttf", 36)  # Substitua pela fonte desejada e pelo tamanho
     # Texto a ser escrito
     text = "DR: Positive"
     # Tamanho do texto
