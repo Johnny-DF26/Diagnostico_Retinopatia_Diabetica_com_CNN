@@ -30,7 +30,7 @@ if img_input is not None:
 
     img = Image.open(img_input)
     st.write("Imagem Enviada:")
-    st.image(img, caption='Imagem carregada', use_column_width=True)
+    st.image(img, caption='Imagem carregada', use_column_width=False, width=500)
 
     # Pré-processamento da imagem para fazer a previsão
     img = img.resize((224, 224))  # Redimensionar a imagem para o tamanho esperado pelo modelo
