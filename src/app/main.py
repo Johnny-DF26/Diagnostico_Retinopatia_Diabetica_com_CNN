@@ -7,8 +7,6 @@ import tensorflow as tf
 import os
 
 
-
-model = tf.
 # Obtém o caminho absoluto para o arquivo JSON
 file_path_json = 'src/models/model_093/classificador_093.json'
 file_path_weigths = 'src/models/model_093/weigths_classificador_0.93.h5'
