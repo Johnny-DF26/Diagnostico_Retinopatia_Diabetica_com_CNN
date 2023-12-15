@@ -17,8 +17,8 @@ links: https://www.kaggle.com/datasets/pkdarabi/diagnosis-of-diabetic-retinopath
 Projeto no Streamlit:
 link: https://diagnosticoretinopatiadiabeticacomcnn.streamlit.app/
 
-OBS: Imagens para teste consta na pasta:
-src/features/Dr
+OBS: Imagens para teste consta na pasta:\
+src/features/Dr\
 src/features/not_dr
 
 
