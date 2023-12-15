@@ -22,10 +22,10 @@ st.title('Diagnóstico de Retinopatia Diabética')
 st.write('Faça o upload de uma imagem para prever o diagnóstico')
 
 # # Upload da imagem
-uploaded_file = st.file_uploader("Escolha uma imagem", type=['jpg', 'jpeg'])
+img_input = st.file_uploader("Escolha uma imagem", type=['jpg', 'jpeg'], accept_multiple_files=False)
 
-if uploaded_file is not None:
-    file_bytes = uploaded_file.read()
+if img_input is not None:
+    file_bytes = img_input.read()
     np_img = np.frombuffer(file_bytes, np.uint8)
     img_orig = cv2.imdecode(np_img, cv2.IMREAD_COLOR)
     img_orig = cv2.cvtColor(img_orig, cv2.COLOR_BGR2RGB)
@@ -35,6 +35,7 @@ if uploaded_file is not None:
     img = cv2.resize(img, (224,224))
     img = np.expand_dims(img, 0)
 
+    st.write("Imagem Enviada:")
     st.image(img_orig, caption='Imagem enviada', use_column_width=False, width=200)
 
     # Realizar a previsão
