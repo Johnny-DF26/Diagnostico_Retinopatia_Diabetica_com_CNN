@@ -19,14 +19,14 @@ Nota: Para testar a aplicação, utilize as imagens de exemplo localizadas em: s
 O projeto segue o padrão Data Science Cookiecutter para melhor organização:
 text
 
-├── LICENSE
-├── README.md          <- Documentação principal.
-├── data/              <- Dados brutos (raw), intermediários e processados.
-├── models/            <- Modelos treinados e serializados (.h5, .pkl).
-├── notebooks/         <- Exploração de dados e experimentos.
-├── src/               <- Código-fonte (scripts de treino, processamento e visualização).
-├── requirements.txt   <- Dependências para rodar o projeto.
-└── setup.py           <- Torna o projeto instalável via pip.
+├── LICENSE 
+├── README.md          <- Documentação principal. 
+├── data/              <- Dados brutos (raw), intermediários e processados. 
+├── models/            <- Modelos treinados e serializados (.h5, .pkl). 
+├── notebooks/         <- Exploração de dados e experimentos. 
+├── src/               <- Código-fonte (scripts de treino, processamento e visualização). 
+├── requirements.txt   <- Dependências para rodar o projeto. 
+└── setup.py           <- Torna o projeto instalável via pip. 
 
 ## 🚀 ***Como Executar***
 ### 1. Clonar o repositório
@@ -42,4 +42,4 @@ bash
 streamlit run app.py
 
 ## 📈 ***Resultados***
-(Dica: Adicione aqui uma frase sobre a acurácia do seu modelo ou uma imagem/gráfico
+...
