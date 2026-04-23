@@ -17,7 +17,6 @@ Nota: Para testar a aplicação, utilize as imagens de exemplo localizadas em: s
 
 ## 🛠️ ***Tecnologias e Estrutura***
 O projeto segue o padrão Data Science Cookiecutter para melhor organização:
-text
 
 ├── LICENSE  
 ├── README.md          <- Documentação principal.  
