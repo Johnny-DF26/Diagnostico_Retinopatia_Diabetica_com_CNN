@@ -18,6 +18,7 @@ Nota: Para testar a aplicação, utilize as imagens de exemplo localizadas em: s
 ## 🛠️ ***Tecnologias e Estrutura***
 O projeto segue o padrão Data Science Cookiecutter para melhor organização:
 text
+
 ├── LICENSE
 ├── README.md          <- Documentação principal.
 ├── data/              <- Dados brutos (raw), intermediários e processados.
@@ -26,3 +27,19 @@ text
 ├── src/               <- Código-fonte (scripts de treino, processamento e visualização).
 ├── requirements.txt   <- Dependências para rodar o projeto.
 └── setup.py           <- Torna o projeto instalável via pip.
+
+## 🚀 ***Como Executar***
+### 1. Clonar o repositório
+git clone https://github.com
+cd nome-do-repositorio
+
+### 2. Instalar dependências
+bash
+pip install -r requirements.txt
+
+### 3. Executar o Web App (Streamlit)
+bash
+streamlit run app.py
+
+## 📈 ***Resultados***
+(Dica: Adicione aqui uma frase sobre a acurácia do seu modelo ou uma imagem/gráfico
