@@ -5,15 +5,17 @@ Este projeto utiliza Redes Neurais Convolucionais (CNN) para automatizar a detec
 ## 📋 ***Sobre o Projeto***
 
 A Retinopatia Diabética é uma das principais causas de perda de visão no mundo. A triagem manual é demorada e escassa em muitas regiões. Este sistema automatizado busca:
-Reduzir erros humanos na interpretação de exames.
-Aumentar a escalabilidade do diagnóstico.
-Permitir intervenção precoce, crucial para salvar a visão do paciente.
-📊 O Conjunto de Dados
+* Reduzir erros humanos na interpretação de exames.
+* Aumentar a escalabilidade do diagnóstico.
+* Permitir intervenção precoce, crucial para salvar a visão do paciente.
+
+## 📊 ***O Conjunto de Dados***
 As imagens foram classificadas por especialistas em uma escala binária:
-🔴 0 (Retinopatia Diabética): Presença de alterações patológicas.
-🟢 1 (Sem Retinopatia Diabética): Retina saudável.
+* 🔴 0 (Retinopatia Diabética): Presença de alterações patológicas.
+* 🟢 1 (Sem Retinopatia Diabética): Retina saudável.
 Nota: Para testar a aplicação, utilize as imagens de exemplo localizadas em: src/features/Dr e src/features/not_dr.
-🛠️ Tecnologias e Estrutura
+
+## 🛠️ ***Tecnologias e Estrutura***
 O projeto segue o padrão Data Science Cookiecutter para melhor organização:
 text
 ├── LICENSE
