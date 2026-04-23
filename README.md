@@ -2,7 +2,8 @@
 
 Este projeto utiliza Redes Neurais Convolucionais (CNN) para automatizar a detecção de Retinopatia Diabética em imagens de retina de alta resolução, visando auxiliar profissionais de saúde em diagnósticos rápidos e precisos.
 
-#📋 ***Sobre o Projeto***
+##📋 ***Sobre o Projeto***
+
 A Retinopatia Diabética é uma das principais causas de perda de visão no mundo. A triagem manual é demorada e escassa em muitas regiões. Este sistema automatizado busca:
 Reduzir erros humanos na interpretação de exames.
 Aumentar a escalabilidade do diagnóstico.
